@@ -1,0 +1,52 @@
+\documentclass[a4paper, 14pt]{extarticle}
+\usepackage[dvipdfmx]{g raphicx}
+\usepackage[comma]{natbib}
+\usepackage{amssymb,amsmath,gensymb}
+\usepackage{url}
+\usepackage{indentfirst} % 行頭インデント
+\usepackage[top=30truemm,bottom=30truemm,left=30truemm,right=30truemm]{geometry}
+\usepackage{libertine} % フォントの変更
+\usepackage[usenames,dvipsnames,dvipdfmx]{color}
+\usepackage{lineno}
+\usepackage{float}
+\usepackage[footnotesize,bf,margin=0.6cm]{caption} % 図表キャプションの設定
+\usepackage{lipsum}
+\usepackage{mediabb} % pdfファイルをそのまま挿入 mediabb.sty
+\usepackage[yyyymmdd,hhmmss]{datetime} % タイムスタンプ
+\usepackage{parskip}
+\usepackage[at]{easylist} % 箇条書きを簡単にする
+\usepackage{ragged2e} % \centering, \raggedright, \raggedleftの打ち消し \justifying 
+%\usepackage[owner=quac,user=quac,print,extract]{bxpdfcrypt}
+\usepackage{fancyhdr} % キャプションとフッターの編集
+\newfloat{plate}{pb}{plt} % second argument should be {htbp} in your actual document
+\usepackage[dvipdfm,
+  colorlinks=true,
+  bookmarks=true,
+  bookmarksnumbered=false,
+  pdfborder={0 0 0},
+  citecolor=Black, %ProcessBlue
+  linkcolor=Black, %Magenta
+  urlcolor=Black, %Black
+  bookmarkstype=toc]{hyperref}
+%\newcommand{\bi}{\bfseries\itshape}
+\renewcommand{\contentsname}{Table of Contents} % 「目次」から変更
+\renewcommand{\abstractname}{要約}
+\renewcommand{\theequation}{Equation \arabic{equation}}
+\renewcommand{\baselinestretch}{2.0} % 行間の指定
+%\renewcommand{\betweenauthors}{&}
+\bibpunct{(}{)}{,}{a}{}{;}
+\renewcommand{\bibfont}{\small}
+\setlength\intextsep{20pt} % ページの途中に出力される図と本文の間のスペース
+\setlength\floatsep{20pt} % ページの上下に出力される図と図の間のスペース
+\setlength{\parindent}{32pt} % インデント
+\setlength{\abovecaptionskip}{0mm} % キャプションのスペース
+\setlength{\belowcaptionskip}{0mm}
+\pagestyle{empty} % ページ番号の非表示
+%#########################################
+\begin{document}
+\pagenumbering{roman}
+%#######*****####### ここまで変更無用 #######*****#######***
+
+
+%#######*****####### 変更無用 #######*****#######***
+\end{document}
