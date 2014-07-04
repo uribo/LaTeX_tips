@@ -1,19 +1,23 @@
 \documentclass[a4paper, 14pt]{extarticle}
+\usepackage[top=30truemm,bottom=30truemm,left=30truemm,right=30truemm]{geometry}
 \usepackage[dvipdfmx]{g raphicx}
 \usepackage[comma]{natbib}
-\usepackage{amssymb,amsmath,gensymb}
-\usepackage{url}
-\usepackage{indentfirst} % 行頭インデント
-\usepackage[top=30truemm,bottom=30truemm,left=30truemm,right=30truemm]{geometry}
-\usepackage{libertine} % フォントの変更
+\usepackage{
+  amssymb,
+  amsmath, 
+  gensymb, 
+  lineno, 
+  float,
+  lipsum, 
+  parskip, 
+  url, 
+  indentfirst, 
+  mediabb, 
+  libertine}
+\usepackage{blindtext} % ダミーテキストを生成 \blindtext
 \usepackage[usenames,dvipsnames,dvipdfmx]{color}
-\usepackage{lineno}
-\usepackage{float}
 \usepackage[footnotesize,bf,margin=0.6cm]{caption} % 図表キャプションの設定
-\usepackage{lipsum}
-\usepackage{mediabb} % pdfファイルをそのまま挿入 mediabb.sty
 \usepackage[yyyymmdd,hhmmss]{datetime} % タイムスタンプ
-\usepackage{parskip}
 \usepackage[at]{easylist} % 箇条書きを簡単にする
 \usepackage{ragged2e} % \centering, \raggedright, \raggedleftの打ち消し \justifying 
 %\usepackage[owner=quac,user=quac,print,extract]{bxpdfcrypt}
@@ -41,12 +45,15 @@
 \setlength{\parindent}{32pt} % インデント
 \setlength{\abovecaptionskip}{0mm} % キャプションのスペース
 \setlength{\belowcaptionskip}{0mm}
-\pagestyle{empty} % ページ番号の非表示
+\pagestyle{empty}
 %#########################################
 \begin{document}
 \pagenumbering{roman}
 %#######*****####### ここまで変更無用 #######*****#######***
 
+\blindtext
+
+あああ
 
 %#######*****####### 変更無用 #######*****#######***
 \end{document}
