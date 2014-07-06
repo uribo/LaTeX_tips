@@ -1,7 +1,18 @@
-% packages
+%#######*****####### packages #######*****#######***
 \usepackage{graphicx}
 \usepackage{listings}
-\usepackage{xcolor}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{fontspec}
+
+\ExplSyntaxOn % fontawesome 読み込み時のエラー回避 
+\cs_new_protected:Npn \fp_div:Nn #1 #2
+  {
+   \fp_set:Nn #1 { #1/#2 }
+  }
+\ExplSyntaxOff
+
+\usepackage{fontawesome}
+%#########################################
 
 % get rid of junk
 \usetheme{default}
@@ -15,6 +26,7 @@
 % named colors
 \definecolor{offwhite}{RGB}{255,250,240}
 \definecolor{gray}{RGB}{155,155,155}
+\definecolor{peach}{cmyk}{0,0.50,0.70,0}
 
 \ifx\notescolors\undefined % slides
   \definecolor{foreground}{RGB}{24,24,24}
@@ -97,3 +109,5 @@
 \newcommand{\figh}[2]{\centerline{\includegraphics[height=#2\textheight]{#1}}}
 \newcommand{\figw}[2]{\centerline{\includegraphics[width=#2\textwidth]{#1}}}
 
+\newcommand{\refer}[1]{\hspace{-20pt} \rightline{{\textcolor{VioletRed}{\small #1}}}}
+\newfontfamily{\FA}{FontAwesome}
